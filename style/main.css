@@ -1,0 +1,171 @@
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr {
+    margin-bottom: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+    font-size: 3.15rem;
+    font-weight: 400;
+}
+
+
+body {
+    background: url('../assets/wedding-landing-background.png') repeat center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #444349;
+    margin: 0 auto;
+
+}
+
+.cover{
+    background: url('../assets/wedding-landing-cover.jpg') no-repeat 70% center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: table;
+}
+
+.wrapper {
+    display: table-cell;
+    vertical-align: middle; 
+}
+
+
+.text-wrapper {
+    background-color: hsla(0, 0%, 0%, 0.58);
+    padding: .05rem;
+    color: #fff;
+}
+
+
+.tagline h2 {
+    letter-spacing: .15rem;
+    margin-bottom: 0.1rem;
+}
+
+.tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12rem;
+  margin: .5rem auto;
+}
+
+
+.text-wrapper h1 {
+
+    font-size: 3.15rem;
+    font-weight: 400;
+    color: #d2ba87;
+    font-family: 'Great Vibes', cursive;
+    margin: 0;
+  
+}
+
+.date {
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+    margin-top: 0;
+}
+
+.date::before {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 2rem;
+  margin: .5rem auto;
+  margin-right: 10px;    
+}
+
+.date::after {
+ display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 2rem;
+  margin: .5rem auto;
+  margin-left: 10px;    
+}
+
+.location {
+    text-align: center;
+}
+
+.box {
+    font-family: Muli;
+    font-weight: 500;
+}
+
+.box img {
+    height: 7rem;
+}
+
+.box::after {
+  display: block;
+  content: "";
+  background-color:#444349;
+  height: 3px;
+  width: 8rem;
+  margin: 1rem auto;
+}
+
+ 
+@media (min-width: 768px) {
+
+.text-wrapper {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    padding: 2rem;
+      transition: font-size .25s linear; 
+  -o-transition: font-size .25s linear; 
+  -moz-transition: font-size .25s linear; 
+  -webkit-transition: font-size .25s linear; 
+}
+}
+
+@media (min-width: 768px) {
+
+.text-wrapper h1 {
+    font-size: 7rem;
+      transition: font-size .25s linear; 
+  -o-transition: font-size .25s linear; 
+  -moz-transition: font-size .25s linear; 
+  -webkit-transition: font-size .25s linear; 
+
+}
+}
+
+@media (min-width: 768px) {
+    .box {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .6rem;
+        
+    }
+  
+}
+
+@media (min-width: 768px) {
+    .box::after {
+    display: none;
+        
+    }
+  
+}
