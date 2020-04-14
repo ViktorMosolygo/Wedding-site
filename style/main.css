@@ -8,6 +8,15 @@ pre,table,fieldset,hr {
 * {
   box-sizing: border-box;
 }
+body {
+    background: url('../assets/wedding-landing-background.png') repeat center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #444349;
+    margin: 0 auto;
+
+}
 
 h1, h2 {
     font-family: 'Great Vibes', cursive;
@@ -18,16 +27,12 @@ h2 {
     font-weight: 400;
 }
 
-
-body {
-    background: url('../assets/wedding-landing-background.png') repeat center;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 1.125rem;
-    line-height: 1.5;
-    color: #444349;
-    margin: 0 auto;
-
+h3 {
+    font-size: 2rem;
 }
+
+
+
 
 .cover{
     background: url('../assets/wedding-landing-cover.jpg') no-repeat 70% center;
@@ -102,13 +107,14 @@ body {
   margin-left: 10px;    
 }
 
-.location {
+.location, .program, .gifts, .faq {
     text-align: center;
 }
 
 .box {
     font-family: Muli;
     font-weight: 500;
+    padding-bottom: 1em;
 }
 
 .box img {
@@ -164,6 +170,81 @@ body {
 
 @media (min-width: 768px) {
     .box::after {
+    display: none;
+        
+    }
+  
+}
+
+.program, .faq {
+    width: 100%;
+    background: hsla(100,0%,0%,.6);
+    color: #d2ba87;
+    font-family: 'Muli', sans-serif;
+    font-weight: 500;
+    padding: 1em 0 1em 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.program-wrapper {
+    text-decoration: none;
+    text-align: left;
+    padding-left: 1em;
+}
+
+@media (min-width: 768px) {
+.program-wrapper {
+    width: 30vw;
+    margin: 0 auto;
+        
+    }
+  
+}
+
+.gifts img {
+    height: 7rem;
+}
+
+
+.question-box p {
+   text-align: left;
+   padding-left: 1em;
+}
+
+.question {
+    font-weight: 800;
+}
+
+.answer {
+ margin-bottom: 2rem;
+}
+
+.question-box::after {
+  display: block;
+  content: "";
+  background-color:#d2ba87;
+  height: 3px;
+  width: 20rem;
+  margin: 1rem auto;
+}
+
+@media (min-width: 768px) {
+    .question-box {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .3rem;
+        
+    }
+  
+}
+
+@media (min-width: 768px) {
+    .question-box::after {
     display: none;
         
     }
