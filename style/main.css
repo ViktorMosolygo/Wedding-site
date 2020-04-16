@@ -35,6 +35,14 @@ nav li {
     letter-spacing: 0;
 }
 
+.navbar-brand {
+    font-size: 2em;
+}
+
+.navbar span {
+    font-size: 1rem;
+}
+
 #myBtn {
   font-family: Muli;
   font-weight: 500;
