@@ -2,20 +2,72 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link href="style/main.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville&family=Muli:wght@300&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>   
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
  
-  <title>Wedding Site</title>
+<title>Wedding Site</title>
 </head>
-<body>
-        <nav>
-        <a href="#" class="sign-up">Sing Up</a>
-        <a href="#">Sign In</a>
-        <a href="#">About</a>
-        <a href="#" class="home">Home</a>
-    </nav>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+ <nav class="container-fluid"> 
+<div class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Z & A</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#location1">Locations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#location2">Program</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More Details
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#location3">Gifts</a>
+          <a class="dropdown-item" href="#location4">Questions & Answers</a>
+          <a class="dropdown-item" href="#location5">Contact</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>     
+</nav>
  <header class="cover">
     <div class="wrapper">
         <div class="wrapper-text-wrapper">
@@ -30,10 +82,12 @@
     </div>
         </div> 
     </header>
+    
    <main>
-    <section class="location">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <section id="location1" class="location">
         <h2>Locations</h2>   
-     <div class="box">
+     <div  class="box">
         <h3>Ceremony</h3>
         <img src="assets/wedding-landing-ceremony.png" alt="Ceremony">
         <div>St. Nicholas Church</div>
@@ -48,14 +102,14 @@
       </div>    
        
      <div class="box">
-        <h3>Photos</h3>
+        <h3>Party</h3>
         <img src="assets/wedding-landing-party.png" alt="Ceremony">
         <div>Liberty Bastion</div>
         <div>23 Wisdom Road, Budapest</div>
       </div>    
     </section>    
     
-    <section class="program">
+    <section id="location2" class="program">
        <h2>Program</h2>
         <div class="program-wrapper">
         <p>"It's going to be somehow, that's for sure."</p>
@@ -70,14 +124,14 @@
         </div>
        </section>
        
-       <section class="gifts">
+       <section id="location3" class="gifts">
        <h2>Gifts</h2>
       <p>The greatest gift for us is to have you there.</p>
           <img src="assets/wedding-landing-gifts.png" alt="gifts"> 
-      <p>The greatest gift for us is to have you there.</p>       
+      <p>Please, just bring yourself and have fun with us.</p>       
        </section>
        
-       <section class="faq">
+       <section id="location4" class="faq">
            <h2>Questions & Answers</h2>
            <div class="question-box">
            <h3>Travel and accomodations</h3>
@@ -119,7 +173,7 @@
      </div>           
        
        </section>
-       <section class="contact">
+       <section id="location5" class="contact">
        <h1>Contact</h1>
        
         <p>If you have any questions feel free to call / write us.</p>   

@@ -19,105 +19,41 @@ body {
 }
 
 nav {
-    text-align: center;
-    background-color: rgba(0,0,0,.9);
-    padding: 1rem;
-    top: 0;   
-}
-
-nav a {
-    
-    text-decoration: none;
-    display: block;
-
-
-}
-
-a {
-    font-size: 1rem;
-    line-height: 2rem;
-    height: 2rem;
-    color: #fff;
-}
-
-a:hover {
-    color:#ddd;
-    transition: color .15s ease-in-out;
-}
-
-.sign-up {
-    border: solid 1px hsla(0,0%,100%,.2);
-    border-radius: 9999px;
-    
-}
-
-.sign-up:hover{
+    height: 7vh;
     background-color: white;
-    color: rgba(0,0,0,.9);
-    transition: color .15s ease-in-out;
+    font-size: 0.95em;
+    letter-spacing: 0.2em;
 }
 
-@media (min-width: 768px) {
-    
-     nav {
-     position: fixed;
-    width: 100%;
-         
-
-
-} 
+nav li {
+    padding-left: 3em;
 }
 
-@media (min-width: 768px) {
-
-  /* Clearfix */
-    nav::after {
-    content: "";
-    clear: both;
-    display: block;
-  }
-
+.dropdown-menu {
+    font-family: Muli;
+    border: none;
+    letter-spacing: 0;
 }
 
-
-@media (min-width: 768px) {
-    
-     nav a {
-     display: inline-block;
-     width: 7.4rem;
-         float: right;
-         
-
-
-} 
+#myBtn {
+  font-family: Muli;
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: hsla(0, 0%, 0%, 0.58);; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  font-size: 0.7em; /* Increase font size */
+    border-radius: 50%;
 }
 
-@media (min-width: 768px) {
-    
-     .home {
-     float: left;
-         
-
-
-} 
-}
-
-  section {
-   font-size: 1rem;
-  }
-
-@media (min-width: 768px) {
-
-  section {
-    width: 60%;
-    margin: 5.25rem auto 1.25rem;
-  }
-
-}
-
-p {
-  margin-bottom: 1.25rem;
-  padding: .5rem;
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
 
 
@@ -212,6 +148,7 @@ h3 {
 
 .location, .program, .gifts, .faq, .contact {
     text-align: center;
+    padding: 4rem 0 4rem 0;
 }
 
 .box {
@@ -285,7 +222,7 @@ h3 {
     color: #d2ba87;
     font-family: 'Muli', sans-serif;
     font-weight: 500;
-    padding: 1em 0 1em 0;
+  
 }
 
 ul {
