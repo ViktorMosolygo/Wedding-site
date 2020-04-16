@@ -18,6 +18,111 @@ body {
 
 }
 
+nav {
+    text-align: center;
+    background-color: rgba(0,0,0,.9);
+    padding: 1rem;
+    top: 0;
+    
+    
+}
+
+nav a {
+    
+    text-decoration: none;
+    display: block;
+
+
+}
+
+a {
+    font-size: 1rem;
+    line-height: 2rem;
+    height: 2rem;
+    color: #fff;
+}
+
+a:hover {
+    color:#ddd;
+    transition: color .15s ease-in-out;
+}
+
+.sign-up {
+    border: solid 1px hsla(0,0%,100%,.2);
+    border-radius: 9999px;
+    
+}
+
+.sign-up:hover{
+    background-color: white;
+    color: rgba(0,0,0,.9);
+    transition: color .15s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    
+     nav {
+     position: fixed;
+    width: 100%;
+         
+
+
+} 
+}
+
+@media (min-width: 768px) {
+
+  /* Clearfix */
+    nav::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+}
+
+
+@media (min-width: 768px) {
+    
+     nav a {
+     display: inline-block;
+     width: 7.4rem;
+         float: right;
+         
+
+
+} 
+}
+
+@media (min-width: 768px) {
+    
+     .home {
+     float: left;
+         
+
+
+} 
+}
+
+  section {
+   font-size: 1rem;
+  }
+
+@media (min-width: 768px) {
+
+  section {
+    width: 60%;
+    margin: 5.25rem auto 1.25rem;
+  }
+
+}
+
+p {
+  margin-bottom: 1.25rem;
+  padding: .5rem;
+}
+
+
 h1, h2 {
     font-family: 'Great Vibes', cursive;
      font-size: 3.15rem;
